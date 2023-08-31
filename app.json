@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/order/order",
+    "pages/shoppingCart/shoppingCart",
+    "pages/category/category"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./public/imgs/index.png",
+        "selectedIconPath": "./public/imgs/index_selected.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "./public/imgs/category.png",
+        "selectedIconPath": "./public/imgs/category_selected.png"
+      },  
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车",
+        "iconPath": "./public/imgs/shopping.png",
+        "selectedIconPath": "./public/imgs/shopping_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./public/imgs/user.png",
+        "selectedIconPath": "./public/imgs/user_selected.png"
+      }
+    ],
+    "color": "#999999",            
+    "selectedColor": "#4285f4"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-divider": "tdesign-miniprogram/divider/divider"
+  }
+}
