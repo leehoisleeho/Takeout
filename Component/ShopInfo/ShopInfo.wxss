@@ -1,0 +1,30 @@
+/* Component/ShopInfo/ShopInfo.wxss */
+.container{
+  position: fixed;
+  width: 700rpx;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  bottom: 10rpx;
+  z-index: 99;
+  border-radius: 30rpx;
+  left: 50%;
+  transform: translate(-350rpx);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.left > image{
+  width: 85rpx;
+}
+.right{
+  display: flex;
+  align-items: center;
+}
+.right>text:nth-child(1){
+  font-size: 40rpx;
+}
+.right>text{
+  font-weight: 600;
+}
+

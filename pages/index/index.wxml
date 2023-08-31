@@ -1,4 +1,31 @@
 <!--index.wxml-->
 <view class="container">
-  
+  <view class="headerImg">
+    <image src="/public/imgs/headerImg.png" mode="" />
+  </view>
+  <t-notice-bar prefixIcon="sound" visible="{{visible}}" marquee="{{marquee2}}" content="{{content}}"></t-notice-bar>
+  <view class="item">
+    <view class="itemTitle">
+      推荐商品
+    </view>
+    <view class="none">暂无商品</view>
+    <view class="itemBox" >
+      <view class="itemBox_1" wx:for="{{4}}" >
+        <image src="/public/imgs/headerImg.png" mode="" bind:tap="toProductDetails"/>
+        <view class="des" bind:tap="toProductDetails">
+          冰鲜三文鱼切片冰鲜三文
+        </view>
+        <view class="price">
+          <text>￥</text>
+          <text>3.5元/个</text>
+        </view>
+        <view class="shoping">
+          <t-stepper defaultValue="0"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 顶出范围 -->
+  <view class="block"></view>
+  <ShopInfo></ShopInfo>
 </view>

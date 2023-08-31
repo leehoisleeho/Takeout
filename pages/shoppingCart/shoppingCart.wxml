@@ -1,2 +1,48 @@
 <!--pages/shoppingCart/shoppingCart.wxml-->
-购物车
+<view class="container">
+  <view class="header"></view>
+  <view class="userInfo_1">
+    <text>请选择收货地址</text>
+    <t-icon name="chevron-right" size="24" />
+  </view>
+  <view class="userInfo">
+    <view class="userInfoItem">
+      <t-icon name="user-circle" size="22" />
+      <text>李浩</text>
+    </view>
+    <view class="userInfoItem">
+      <t-icon name="mobile-vibrate" size="22" />
+      <text>18608735101</text>
+    </view>
+    <view class="userInfoItem">
+      <t-icon name="location" size="22" />
+      <text>云南省红河州蒙自市红竺园B区联8-1</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="listItem" wx:for="{{4}}">
+      <view class="listItemDes">
+        <image src="/public/imgs/cart.png" mode="" />
+        <view class="listItemDes_1">
+          <view>卤鸭头</view>
+          <view class="listItemDes_2">
+            <text>18元 * 3份</text>
+          </view>
+        </view>
+      </view>
+      <view class="price">48元</view>
+    </view>
+    <view class="total">
+      <view class="totalItem">
+        <text>小计: </text>
+        <text>￥</text>
+        <text>400元</text>
+      </view>
+    </view>
+  </view>
+  <view class="btnBox">
+    <t-button theme="primary" size="large" variant="outline" block>确认付款</t-button>
+  </view>
+   <!-- 顶出范围 -->
+   <view class="block"></view>
+</view>

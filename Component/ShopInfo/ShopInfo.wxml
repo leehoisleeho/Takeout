@@ -1,0 +1,13 @@
+<!--Component/ShopInfo/ShopInfo.wxml-->
+<view class="container">
+  <view style="margin-left: 30rpx;" class="left">
+    <!-- <image src="/public/imgs/cart_1.png" mode="widthFix" wx:if="{{!show}}"/>
+    <image src="/public/imgs/cart.png" mode="widthFix" wx:if="{{show}}"/> -->
+    <image src="/public/imgs/cart_2.jpg" mode="widthFix"/>
+  </view>
+  <view class="right"> 
+    <text>￥</text>
+    <text style="margin-right: 30rpx;">0元</text>
+    <t-button theme="primary" size="medium" style="margin-right: 30rpx;" bind:tap="toShoppingCart" disabled="{{isdisabled}}">结算</t-button>
+  </view>
+</view>

@@ -1,1 +1,77 @@
 /**index.wxss**/
+.container{
+  position: relative;
+}
+.headerImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  padding: 20rpx 20rpx;
+}
+.itemTitle{
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.itemBox{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.itemBox_1{
+  width: 340rpx;
+  margin-bottom: 30rpx;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15rpx;
+  padding-bottom: 15px;
+  height: 480rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shoping{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 20rpx;
+}
+.itemBox_1>image{
+  width: 340rpx;
+  height:280rpx;
+}
+.des{
+  padding: 0 15rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 显示两行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.none{
+  font-size: 25rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+.price{
+  display: flex;
+  align-items: center;
+  padding-left: 10rpx;
+  margin-top: 10rpx;
+}
+.price > text:nth-child(1){
+  color: red;
+  font-weight: 500;
+  font-size: 40rpx;
+}
+.price > text:nth-child(2){
+  color: #333;
+  font-weight: 500;
+  font-size: 30rpx;
+}
+.block{
+  height: 110rpx;
+}
+

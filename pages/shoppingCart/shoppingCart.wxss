@@ -1,1 +1,100 @@
 /* pages/shoppingCart/shoppingCart.wxss */
+.container{
+  position: relative;
+  padding-top: 30rpx;
+}
+.header{
+  height: 800rpx;
+  width: 750rpx;
+  background: linear-gradient(to bottom, #4285f4, #ffffff);
+  position: absolute;
+  z-index: -1;
+}
+.userInfo_1{
+  width: 660rpx;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  background: white;
+  color: #999;
+}
+.userInfo{
+  width: 700rpx;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+  padding: 20rpx 0;
+  background: white;
+}
+.userInfoItem{
+  padding: 15rpx 20rpx;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+.userInfoItem>text{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+.list{
+  width: 700rpx;
+  margin: 20rpx auto;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.listItem{
+  padding: 30rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid rgb(236, 236, 236);
+}
+.listItemDes>image{
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 20rpx;
+}
+.listItemDes{
+  display: flex;
+}
+.listItemDes_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rpx 0;
+}
+.listItemDes_2{
+  font-size: 25rpx;
+  color: #666;
+}
+.price{
+  font-size: 25rpx;
+  color: #333333 ;
+}
+.total{
+  display: flex;
+  padding: 30rpx 30rpx;
+  flex-direction: row-reverse;
+}
+.btnBox{
+  margin: 50rpx auto;
+  padding: 0 30rpx;
+}
+.block{
+  height: 20rpx;
+}
+.totalItem{
+  display: flex;
+  align-items: center;
+}
+.totalItem>text:nth-child(2){
+  color: red;
+  font-weight: 600;
+  font-size: 40rpx;
+}
